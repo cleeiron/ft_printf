@@ -39,16 +39,12 @@ $(NAME): $(OBJS)
 %.o: %.c ft_printf.h
 	$(CC) $(CFLAGS) -c $< -o $@
 
-test: $(NAME) main.c
-	$(CC) $(CFLAGS) main.c $(NAME) -o $(TEST)
-	./$(TEST)
-
 clean:
 	rm -f $(OBJS)
 
 fclean: clean
-	rm -f $(NAME) $(TEST)
+	rm -f $(NAME)
 
 re: fclean all
 
-.PHONY: all clean fclean re test
+.PHONY: all clean fclean re
