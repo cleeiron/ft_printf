@@ -6,10 +6,11 @@
 /*   By: cleiron <cleiron@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/22 17:21:11 by cleiron           #+#    #+#             */
-/*   Updated: 2026/10/23 11:24:39 by cleiron          ###   ########.fr       */
+/*   Updated: 2026/10/26 11:13:49 by cleiron          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "ft_printf.h"
 
 int	ft_conversion(char letter, va_list args)
 {
